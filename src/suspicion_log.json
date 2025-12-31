@@ -1,0 +1,774 @@
+[
+    {
+        "timestamp": 0.69,
+        "score": 0
+    },
+    {
+        "timestamp": 4.07,
+        "score": 0
+    },
+    {
+        "timestamp": 4.49,
+        "score": 0
+    },
+    {
+        "timestamp": 4.95,
+        "score": 0
+    },
+    {
+        "timestamp": 5.38,
+        "score": 0
+    },
+    {
+        "timestamp": 5.71,
+        "score": 0
+    },
+    {
+        "timestamp": 6.02,
+        "score": 0
+    },
+    {
+        "timestamp": 6.31,
+        "score": 0
+    },
+    {
+        "timestamp": 6.63,
+        "score": 0
+    },
+    {
+        "timestamp": 6.94,
+        "score": 0
+    },
+    {
+        "timestamp": 7.29,
+        "score": 0
+    },
+    {
+        "timestamp": 7.58,
+        "score": 0
+    },
+    {
+        "timestamp": 7.89,
+        "score": 0
+    },
+    {
+        "timestamp": 8.19,
+        "score": 0
+    },
+    {
+        "timestamp": 8.47,
+        "score": 0
+    },
+    {
+        "timestamp": 8.76,
+        "score": 0
+    },
+    {
+        "timestamp": 9.05,
+        "score": 20
+    },
+    {
+        "timestamp": 9.35,
+        "score": 20
+    },
+    {
+        "timestamp": 9.63,
+        "score": 20
+    },
+    {
+        "timestamp": 9.93,
+        "score": 20
+    },
+    {
+        "timestamp": 10.21,
+        "score": 20
+    },
+    {
+        "timestamp": 10.5,
+        "score": 20
+    },
+    {
+        "timestamp": 10.79,
+        "score": 20
+    },
+    {
+        "timestamp": 11.08,
+        "score": 20
+    },
+    {
+        "timestamp": 11.37,
+        "score": 20
+    },
+    {
+        "timestamp": 11.66,
+        "score": 20
+    },
+    {
+        "timestamp": 11.93,
+        "score": 20
+    },
+    {
+        "timestamp": 12.24,
+        "score": 20
+    },
+    {
+        "timestamp": 12.53,
+        "score": 20
+    },
+    {
+        "timestamp": 12.84,
+        "score": 20
+    },
+    {
+        "timestamp": 13.14,
+        "score": 20
+    },
+    {
+        "timestamp": 13.45,
+        "score": 20
+    },
+    {
+        "timestamp": 13.74,
+        "score": 20
+    },
+    {
+        "timestamp": 14.04,
+        "score": 20
+    },
+    {
+        "timestamp": 14.33,
+        "score": 20
+    },
+    {
+        "timestamp": 14.63,
+        "score": 20
+    },
+    {
+        "timestamp": 14.93,
+        "score": 20
+    },
+    {
+        "timestamp": 15.24,
+        "score": 20
+    },
+    {
+        "timestamp": 15.55,
+        "score": 20
+    },
+    {
+        "timestamp": 15.84,
+        "score": 20
+    },
+    {
+        "timestamp": 16.14,
+        "score": 20
+    },
+    {
+        "timestamp": 16.44,
+        "score": 20
+    },
+    {
+        "timestamp": 16.75,
+        "score": 20
+    },
+    {
+        "timestamp": 17.04,
+        "score": 20
+    },
+    {
+        "timestamp": 17.33,
+        "score": 20
+    },
+    {
+        "timestamp": 17.63,
+        "score": 20
+    },
+    {
+        "timestamp": 17.92,
+        "score": 20
+    },
+    {
+        "timestamp": 18.21,
+        "score": 20
+    },
+    {
+        "timestamp": 18.51,
+        "score": 20
+    },
+    {
+        "timestamp": 18.81,
+        "score": 20
+    },
+    {
+        "timestamp": 19.12,
+        "score": 20
+    },
+    {
+        "timestamp": 19.42,
+        "score": 20
+    },
+    {
+        "timestamp": 19.75,
+        "score": 20
+    },
+    {
+        "timestamp": 20.05,
+        "score": 20
+    },
+    {
+        "timestamp": 20.34,
+        "score": 20
+    },
+    {
+        "timestamp": 20.65,
+        "score": 20
+    },
+    {
+        "timestamp": 20.95,
+        "score": 20
+    },
+    {
+        "timestamp": 21.26,
+        "score": 20
+    },
+    {
+        "timestamp": 21.56,
+        "score": 20
+    },
+    {
+        "timestamp": 21.85,
+        "score": 20
+    },
+    {
+        "timestamp": 22.17,
+        "score": 20
+    },
+    {
+        "timestamp": 22.5,
+        "score": 20
+    },
+    {
+        "timestamp": 22.83,
+        "score": 20
+    },
+    {
+        "timestamp": 23.14,
+        "score": 20
+    },
+    {
+        "timestamp": 23.44,
+        "score": 20
+    },
+    {
+        "timestamp": 23.74,
+        "score": 20
+    },
+    {
+        "timestamp": 24.04,
+        "score": 20
+    },
+    {
+        "timestamp": 24.35,
+        "score": 20
+    },
+    {
+        "timestamp": 24.67,
+        "score": 20
+    },
+    {
+        "timestamp": 24.97,
+        "score": 20
+    },
+    {
+        "timestamp": 25.29,
+        "score": 20
+    },
+    {
+        "timestamp": 25.61,
+        "score": 20
+    },
+    {
+        "timestamp": 25.95,
+        "score": 20
+    },
+    {
+        "timestamp": 26.27,
+        "score": 20
+    },
+    {
+        "timestamp": 26.59,
+        "score": 20
+    },
+    {
+        "timestamp": 26.92,
+        "score": 20
+    },
+    {
+        "timestamp": 27.23,
+        "score": 20
+    },
+    {
+        "timestamp": 27.54,
+        "score": 20
+    },
+    {
+        "timestamp": 27.83,
+        "score": 20
+    },
+    {
+        "timestamp": 28.1,
+        "score": 20
+    },
+    {
+        "timestamp": 28.41,
+        "score": 20
+    },
+    {
+        "timestamp": 28.72,
+        "score": 20
+    },
+    {
+        "timestamp": 29.0,
+        "score": 20
+    },
+    {
+        "timestamp": 29.28,
+        "score": 20
+    },
+    {
+        "timestamp": 29.56,
+        "score": 20
+    },
+    {
+        "timestamp": 29.83,
+        "score": 20
+    },
+    {
+        "timestamp": 30.11,
+        "score": 20
+    },
+    {
+        "timestamp": 30.4,
+        "score": 20
+    },
+    {
+        "timestamp": 30.68,
+        "score": 20
+    },
+    {
+        "timestamp": 30.96,
+        "score": 20
+    },
+    {
+        "timestamp": 31.23,
+        "score": 20
+    },
+    {
+        "timestamp": 31.5,
+        "score": 20
+    },
+    {
+        "timestamp": 31.73,
+        "score": 20
+    },
+    {
+        "timestamp": 31.99,
+        "score": 20
+    },
+    {
+        "timestamp": 32.24,
+        "score": 20
+    },
+    {
+        "timestamp": 32.48,
+        "score": 20
+    },
+    {
+        "timestamp": 32.71,
+        "score": 20
+    },
+    {
+        "timestamp": 32.95,
+        "score": 20
+    },
+    {
+        "timestamp": 33.19,
+        "score": 20
+    },
+    {
+        "timestamp": 33.44,
+        "score": 20
+    },
+    {
+        "timestamp": 33.73,
+        "score": 20
+    },
+    {
+        "timestamp": 34.02,
+        "score": 20
+    },
+    {
+        "timestamp": 34.31,
+        "score": 20
+    },
+    {
+        "timestamp": 34.58,
+        "score": 20
+    },
+    {
+        "timestamp": 34.85,
+        "score": 20
+    },
+    {
+        "timestamp": 35.13,
+        "score": 20
+    },
+    {
+        "timestamp": 35.43,
+        "score": 20
+    },
+    {
+        "timestamp": 35.71,
+        "score": 20
+    },
+    {
+        "timestamp": 35.98,
+        "score": 20
+    },
+    {
+        "timestamp": 36.24,
+        "score": 20
+    },
+    {
+        "timestamp": 36.49,
+        "score": 20
+    },
+    {
+        "timestamp": 36.71,
+        "score": 20
+    },
+    {
+        "timestamp": 36.93,
+        "score": 20
+    },
+    {
+        "timestamp": 37.15,
+        "score": 20
+    },
+    {
+        "timestamp": 37.35,
+        "score": 20
+    },
+    {
+        "timestamp": 37.55,
+        "score": 20
+    },
+    {
+        "timestamp": 37.83,
+        "score": 20
+    },
+    {
+        "timestamp": 38.06,
+        "score": 20
+    },
+    {
+        "timestamp": 38.33,
+        "score": 20
+    },
+    {
+        "timestamp": 38.58,
+        "score": 20
+    },
+    {
+        "timestamp": 38.86,
+        "score": 20
+    },
+    {
+        "timestamp": 39.13,
+        "score": 20
+    },
+    {
+        "timestamp": 39.43,
+        "score": 20
+    },
+    {
+        "timestamp": 39.73,
+        "score": 20
+    },
+    {
+        "timestamp": 40.02,
+        "score": 20
+    },
+    {
+        "timestamp": 40.33,
+        "score": 20
+    },
+    {
+        "timestamp": 40.61,
+        "score": 20
+    },
+    {
+        "timestamp": 40.89,
+        "score": 20
+    },
+    {
+        "timestamp": 41.18,
+        "score": 20
+    },
+    {
+        "timestamp": 41.47,
+        "score": 20
+    },
+    {
+        "timestamp": 41.72,
+        "score": 20
+    },
+    {
+        "timestamp": 41.94,
+        "score": 20
+    },
+    {
+        "timestamp": 42.13,
+        "score": 20
+    },
+    {
+        "timestamp": 42.43,
+        "score": 20
+    },
+    {
+        "timestamp": 42.75,
+        "score": 20
+    },
+    {
+        "timestamp": 43.05,
+        "score": 20
+    },
+    {
+        "timestamp": 43.38,
+        "score": 20
+    },
+    {
+        "timestamp": 43.65,
+        "score": 20
+    },
+    {
+        "timestamp": 43.9,
+        "score": 20
+    },
+    {
+        "timestamp": 44.2,
+        "score": 20
+    },
+    {
+        "timestamp": 44.51,
+        "score": 20
+    },
+    {
+        "timestamp": 44.79,
+        "score": 20
+    },
+    {
+        "timestamp": 45.05,
+        "score": 20
+    },
+    {
+        "timestamp": 45.29,
+        "score": 20
+    },
+    {
+        "timestamp": 45.55,
+        "score": 20
+    },
+    {
+        "timestamp": 45.82,
+        "score": 20
+    },
+    {
+        "timestamp": 46.1,
+        "score": 20
+    },
+    {
+        "timestamp": 46.44,
+        "score": 20
+    },
+    {
+        "timestamp": 46.7,
+        "score": 20
+    },
+    {
+        "timestamp": 46.94,
+        "score": 20
+    },
+    {
+        "timestamp": 47.18,
+        "score": 20
+    },
+    {
+        "timestamp": 47.42,
+        "score": 20
+    },
+    {
+        "timestamp": 47.73,
+        "score": 20
+    },
+    {
+        "timestamp": 48.02,
+        "score": 20
+    },
+    {
+        "timestamp": 48.33,
+        "score": 20
+    },
+    {
+        "timestamp": 48.64,
+        "score": 20
+    },
+    {
+        "timestamp": 48.94,
+        "score": 20
+    },
+    {
+        "timestamp": 49.25,
+        "score": 20
+    },
+    {
+        "timestamp": 49.56,
+        "score": 20
+    },
+    {
+        "timestamp": 49.85,
+        "score": 20
+    },
+    {
+        "timestamp": 50.16,
+        "score": 20
+    },
+    {
+        "timestamp": 50.48,
+        "score": 20
+    },
+    {
+        "timestamp": 50.78,
+        "score": 20
+    },
+    {
+        "timestamp": 51.08,
+        "score": 20
+    },
+    {
+        "timestamp": 51.38,
+        "score": 20
+    },
+    {
+        "timestamp": 51.68,
+        "score": 20
+    },
+    {
+        "timestamp": 52.0,
+        "score": 20
+    },
+    {
+        "timestamp": 52.29,
+        "score": 20
+    },
+    {
+        "timestamp": 52.6,
+        "score": 20
+    },
+    {
+        "timestamp": 52.91,
+        "score": 20
+    },
+    {
+        "timestamp": 53.22,
+        "score": 20
+    },
+    {
+        "timestamp": 53.52,
+        "score": 20
+    },
+    {
+        "timestamp": 53.81,
+        "score": 20
+    },
+    {
+        "timestamp": 54.12,
+        "score": 20
+    },
+    {
+        "timestamp": 54.43,
+        "score": 20
+    },
+    {
+        "timestamp": 54.73,
+        "score": 20
+    },
+    {
+        "timestamp": 55.03,
+        "score": 20
+    },
+    {
+        "timestamp": 55.33,
+        "score": 20
+    },
+    {
+        "timestamp": 55.64,
+        "score": 20
+    },
+    {
+        "timestamp": 55.94,
+        "score": 20
+    },
+    {
+        "timestamp": 56.25,
+        "score": 20
+    },
+    {
+        "timestamp": 56.55,
+        "score": 20
+    },
+    {
+        "timestamp": 56.87,
+        "score": 20
+    },
+    {
+        "timestamp": 57.16,
+        "score": 20
+    },
+    {
+        "timestamp": 57.5,
+        "score": 20
+    },
+    {
+        "timestamp": 57.79,
+        "score": 20
+    },
+    {
+        "timestamp": 58.09,
+        "score": 20
+    },
+    {
+        "timestamp": 58.4,
+        "score": 20
+    },
+    {
+        "timestamp": 58.7,
+        "score": 20
+    },
+    {
+        "timestamp": 59.0,
+        "score": 20
+    },
+    {
+        "timestamp": 59.3,
+        "score": 20
+    },
+    {
+        "timestamp": 59.62,
+        "score": 20
+    },
+    {
+        "timestamp": 59.94,
+        "score": 20
+    }
+]

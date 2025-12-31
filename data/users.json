@@ -1,0 +1,10 @@
+{
+    "kal": {
+        "password": "$2b$12$9c0WObNqOp0H7eSAI98m/.wKHhfcFCob7lcRj71LxsNIZEfdFCHgy",
+        "role": "student"
+    },
+    "king": {
+        "password": "$2b$12$S/F7M1fntrw52iQC.eOkluGShpoOoIART9.Lgof6cvutl0Q/LJ9A6",
+        "role": "faculty"
+    }
+}

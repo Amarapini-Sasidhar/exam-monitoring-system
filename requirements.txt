@@ -1,0 +1,7 @@
+bcrypt
+opencv-python
+ultralytics
+matplotlib
+fpdf
+pandas
+torch
