@@ -6,20 +6,21 @@ A Python-based exam monitoring system for remote, proctored examinations with au
 
 ## 📋 Table of contents
 
-- [✨ Features](#✨-features)
-- [🧩 Architecture & components](#🧩-architecture--components)
-- [🛠️ Tech stack](#🛠️-tech-stack)
-- [🚀 Quick start (development)](#🚀-quick-start-development)
-- [⚙️ Configuration](#⚙️-configuration)
-- [🧰 Running in production](#🧰-running-in-production)
-- [🐳 Docker](#🐳-docker)
-- [🧪 Testing](#🧪-testing)
-- [📈 Logging & monitoring](#📈-logging--monitoring)
-- [📁 Project structure (suggested)](#📁-project-structure-suggested)
-- [🤝 Contributing](#🤝-contributing)
-- [🔐 Security](#🔐-security)
-- [📄 License](#📄-license)
-- [📬 Contact](#📬-contact)
+- [✨ Features](#features)
+- [🧩 Architecture & components](#architecture--components)
+- [🛠️ Tech stack](#tech-stack)
+- [🚀 Quick start (development)](#quick-start-development)
+- [⚙️ Configuration](#configuration)
+- [🧰 Running in production](#running-in-production)
+- [🐳 Docker](#docker)
+- [🧪 Testing](#testing)
+- [📈 Logging & monitoring](#logging--monitoring)
+- [📁 Project structure (suggested)](#project-structure-suggested)
+- [🤝 Contributing](#contributing)
+- [🔐 Security](#security)
+- [📄 License](#license)
+- [📬 Contact](#contact)
+
 
 ---
 
