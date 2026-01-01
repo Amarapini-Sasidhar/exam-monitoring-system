@@ -244,8 +244,3 @@ See LICENSE file for details.
 Maintainer: Amarapini-Sasidhar  
 GitHub: [Amarapini-Sasidhar](https://github.com/Amarapini-Sasidhar) 🙋‍♂️
 
----
-
-If you'd like, I can:
-- Tailor the README with exact run commands using a specific entrypoint file (e.g., `app.py` or `main.py`), or
-- Add badges (build, coverage, license) and a screenshot of the dashboard — point me to the files or paste the entrypoint and I will update the README with exact, copy/paste-ready commands.
