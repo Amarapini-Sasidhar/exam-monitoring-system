@@ -188,19 +188,20 @@ pytest
 
 A typical layout:
 ```
-exam_monitoring_system/
-├─ exam_monitoring_system/
-│  ├─ api/
-│  ├─ detectors/
-│  ├─ storage/
-│  ├─ models/
-│  ├─ services/
-│  └─ __init__.py
-├─ tests/
-├─ requirements.txt
-├─ Dockerfile
-├─ docker-compose.yml
-└─ .env.example
+exam-monitoring-system/
+├── data/
+│   └── .gitkeep
+├── sessions/
+│   └── .gitkeep
+├── suspicious_frames/
+│   └── .gitkeep
+├── src/
+│   └── (application source files)
+├── venv/                 # ignored (local virtual environment)
+├── .gitignore
+├── requirements.txt
+└── README.md
+
 ```
 
 Adjust according to the actual repo contents.
