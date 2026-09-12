@@ -1,246 +1,286 @@
-# 🧑‍🏫 Exam Monitoring System
+# Secure Examination Monitoring System (SEMS)
 
-A Python-based exam monitoring system for remote, proctored examinations with automated monitoring, recording, and integrity checks — built to be extensible and production-ready. ⚖️🔒
+A Python-based examination monitoring prototype that combines user authentication, webcam-based monitoring, computer vision, suspicion scoring, and examination management features.
 
-> NOTE: This README is framework-agnostic. Replace placeholders (e.g., `ENTRY_POINT`) with the repository's actual module/script names (like `app.py`, `main.py`, or framework-specific entrypoints).
+The project is designed as a local application for experimenting with automated exam monitoring and security-related workflows.
 
-## 📋 Table of contents
+## Features
 
-## ✨ Features <a id="features"></a>
-## 🧩 Architecture & components <a id="architecture--components"></a>
-## 🛠️ Tech stack <a id="tech-stack"></a>
-## 🚀 Quick start (development) <a id="quick-start-development"></a>
-## ⚙️ Configuration <a id="configuration"></a>
-## 🧰 Running in production <a id="running-in-production"></a>
-## 🐳 Docker <a id="docker"></a>
-## 🧪 Testing <a id="testing"></a>
-## 📈 Logging & monitoring <a id="logging--monitoring"></a>
-## 📁 Project structure (suggested) <a id="project-structure-suggested"></a>
-## 🤝 Contributing <a id="contributing"></a>
-## 🔐 Security <a id="security"></a>
-## 📄 License <a id="license"></a>
-## 📬 Contact <a id="contact"></a>
+### Authentication & User Roles
 
+* Student and Faculty registration and login
+* Role-based access to application features
+* Password hashing using `bcrypt`
+* Username and role validation
 
+### Student Features
+
+* View student marks
+* View faculty notifications
+* Submit anonymous feedback
+
+### Faculty Features
+
+* Update student marks
+* Post notifications
+* Start webcam-based monitoring sessions
+* Generate suspicion score visualizations
+* Export suspicion reports to CSV and PDF
+* Initialize file integrity hashes
+* Check monitored files for tampering
+
+### Automated Exam Monitoring
+
+The monitoring module uses the computer's webcam and performs basic computer-vision checks during a monitoring session.
+
+It currently includes:
+
+* Webcam capture using OpenCV
+* Face detection using OpenCV Haar Cascades
+* Object detection using YOLOv8
+* Detection of multiple faces
+* Detection of objects such as cell phones and books
+* Rule-based suspicion scoring
+* Suspicious-frame capture
+* Session video recording
+* Timestamped suspicion logging
+
+### File Integrity Monitoring
+
+The project includes a basic file-integrity mechanism using SHA-256 hashes.
+
+The system can:
+
+* Generate baseline hashes for selected data files
+* Recalculate hashes during later checks
+* Report files whose contents have changed
+
+### Reporting
+
+Monitoring data can be exported as:
+
+* CSV
+* PDF
+
+A simple matplotlib-based visualization is also available for reviewing suspicion scores over time.
 
 ---
 
-## ✨ Features
+## Technology Stack
 
-- 🎥 Live proctoring with webcam capture
-- 📼 Session recording and storage
-- 🧠 Automated checks (face presence, multiple faces, absence detection)
-- 🚨 Alert/event logging for suspicious activity
-- 🧑‍⚖️ Role-based dashboard for proctors and admins
-- ⚙️ Configurable retention and storage policies
-
----
-
-## 🧩 Architecture & components
-
-Typical components you may find or add:
-
-- Client: Browser or desktop app capturing webcam stream
-- Backend (Python): API to ingest streams, persist recordings, and run detection
-- Detection modules: OpenCV / ML-powered detectors for face/behavior checks
-- Storage: Local filesystem or object storage (S3/MinIO)
-- Database: SQLite / Postgres for metadata and session logs
-- Dashboard: Web UI for proctors and admins
+* **Language:** Python 3
+* **GUI / Interface:** Command-line interface
+* **Computer Vision:** OpenCV
+* **Object Detection:** YOLOv8 via Ultralytics
+* **Authentication:** bcrypt
+* **Data Storage:** JSON and text files
+* **Data Processing:** pandas
+* **Visualization:** Matplotlib
+* **Reporting:** FPDF
+* **Concurrency / Processing:** Python standard libraries
 
 ---
 
-## 🛠️ Tech stack
+## Project Structure
 
-- Language: Python (100%) 🐍
-- Common libraries (examples):
-  - Web frameworks: FastAPI, Flask, or Django
-  - CV: OpenCV, dlib, face-recognition
-  - ML: TensorFlow / PyTorch (optional)
-  - ORM: SQLAlchemy or Django ORM
-  - Testing: pytest
-  - Containerization: Docker
+```text
+exam-monitoring-system/
+│
+├── data/
+│   ├── feedback.txt
+│   ├── marks.json
+│   ├── notifications.json
+│   ├── suspicion_log.json
+│   └── users.json
+│
+├── sessions/
+│   └── .gitkeep
+│
+├── suspicious_frames/
+│   └── .gitkeep
+│
+├── src/
+│   ├── auth.py
+│   ├── cheat_detection.py
+│   ├── dashboard.py
+│   ├── export.py
+│   ├── face_detection.py
+│   ├── feedback.py
+│   ├── hash_check.py
+│   ├── hashing.py
+│   ├── heatmap.py
+│   ├── main.py
+│   ├── marks.py
+│   ├── notifications.py
+│   ├── suspicion_log.json
+│   ├── yolo_detector.py
+│   └── yolov8n.pt
+│
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## 🚀 Quick start (development)
+## Installation
 
-Prerequisites
-- Python 3.9+ (3.10+ recommended)
-- git
-- Optional: Docker & Docker Compose
+### 1. Clone the repository
 
-Steps
-
-1. Clone the repo
 ```bash
 git clone https://github.com/Amarapini-Sasidhar/exam-monitoring-system.git
 cd exam-monitoring-system
 ```
 
-2. Create and activate a virtual environment
-- macOS / Linux:
+### 2. Create a virtual environment
+
 ```bash
 python -m venv .venv
+```
+
+Activate it on Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+On Linux/macOS:
+
+```bash
 source .venv/bin/activate
 ```
-- Windows (PowerShell):
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
 
-3. Install dependencies
+### 3. Install dependencies
+
 ```bash
 pip install -r requirements.txt
-# or, if using poetry:
-# poetry install
 ```
 
-4. Configure environment variables
-Create a `.env` in project root (see [Configuration](#⚙️-configuration)).
+The project requires:
 
-5. Run the app
-Replace `ENTRY_POINT` with the repository's actual runnable module:
+* `bcrypt`
+* `opencv-python`
+* `ultralytics`
+* `matplotlib`
+* `fpdf`
+* `pandas`
+* `torch`
+
+A working webcam is required for the monitoring functionality.
+
+---
+
+## Running the Application
+
+From the `src` directory:
+
 ```bash
-python ENTRY_POINT
-# Or for FastAPI:
-# uvicorn main:app --reload
+cd src
+python main.py
 ```
 
-6. Open the dashboard at the configured host/port (e.g., http://127.0.0.1:8000). 🌐
+The application provides a command-line menu for authentication and role-based functionality.
 
 ---
 
-## ⚙️ Configuration
+## Monitoring Workflow
 
-Recommended environment variables (example):
-- APP_ENV=development | production
-- SECRET_KEY=your-secret-key
-- DATABASE_URL=sqlite:///./dev.db or postgres://user:pass@host:5432/db
-- STORAGE_PATH=/path/to/recordings
-- S3_ENDPOINT=https://s3.example.com
-- PROCTORING_MODE=automated|semi-automated|manual
-- CAMERA_DEVICE=0
-- RECORDING_FORMAT=mp4
-- LOG_LEVEL=INFO
+A Faculty user can start a monitoring session and specify the monitoring duration.
 
-Add `.env.example` to document required variables. Keep real secrets out of the repo.
+During the session, the application:
 
----
+1. Captures frames from the webcam.
+2. Detects faces using OpenCV.
+3. Detects objects using YOLOv8.
+4. Calculates a rule-based suspicion score.
+5. Captures selected suspicious frames.
+6. Records the monitoring session as an MP4 video.
+7. Stores timestamped suspicion information.
 
-## 🧰 Running in production
+The current scoring rules include:
 
-- Use a production ASGI/WSGI server (Gunicorn + Uvicorn workers for FastAPI).
-- Separate workers for CPU-heavy processing (Celery / RQ).
-- Use secure object storage (S3) with lifecycle policies for recordings.
-- Put a reverse proxy (Nginx) in front and enforce TLS (HTTPS).
-- Monitor and autoscale processing components if needed.
+| Detection           | Score |
+| ------------------- | ----: |
+| Multiple faces      |   +20 |
+| Cell phone detected |   +20 |
+| Book detected       |   +10 |
 
-Example (Gunicorn + Uvicorn):
-```bash
-gunicorn -k uvicorn.workers.UvicornWorker main:app -w 4 -b 0.0.0.0:8000
-```
+The highest observed suspicion score is retained during the session.
 
 ---
 
-## 🐳 Docker
+## Output Files
 
-Simple Dockerfile example:
-```dockerfile
-FROM python:3.10-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . /app
-CMD ["python", "ENTRY_POINT"]
-```
+Depending on the operations performed, the application can generate:
 
-Build & run:
-```bash
-docker build -t exam-monitoring-system .
-docker run -e SECRET_KEY=... -p 8000:8000 exam-monitoring-system
-```
+* Monitoring session videos
+* Suspicious frame images
+* Suspicion logs
+* CSV reports
+* PDF reports
+* File-integrity hash records
 
-Use docker-compose to include DB and storage (MinIO) services.
+Generated runtime files should be treated as local application data.
 
 ---
 
-## 🧪 Testing
+## File Integrity Checking
 
-- Run tests with pytest:
-```bash
-pytest
-```
-- Use a test database (SQLite) or mocks for external services.
-- CI: add GitHub Actions or other CI to run tests, lint, and type checks.
+The project includes a simple SHA-256 based integrity-checking mechanism.
 
----
+Faculty users can initialize hashes for selected data files and later run an integrity check to identify files whose contents have changed.
 
-## 📈 Logging & monitoring
-
-- Log to stdout for 12-factor compatibility 🧾
-- Consider structured JSON logs for centralized systems (ELK, Datadog)
-- Add Prometheus metrics: session counts, alert rates, processing times
-- Health endpoints for orchestration systems
+This provides a basic demonstration of file-integrity monitoring rather than a complete tamper-proof evidence system.
 
 ---
 
-## 📁 Project structure (suggested)
+## Limitations
 
-A typical layout:
-```
-exam-monitoring-system/
-├── data/
-│   └── .gitkeep
-├── sessions/
-│   └── .gitkeep
-├── suspicious_frames/
-│   └── .gitkeep
-├── src/
-│   └── (application source files)
-├── venv/                 # ignored (local virtual environment)
-├── .gitignore
-├── requirements.txt
-└── README.md
+This project is currently a **prototype for learning and experimentation** rather than a production-ready examination platform.
 
-```
+Current limitations include:
 
-Adjust according to the actual repo contents.
+* Local JSON/text-file storage instead of a centralized database
+* Command-line based user interface
+* Local webcam monitoring
+* Rule-based suspicion scoring
+* Basic face and object detection
+* No distributed or cloud deployment
+* No centralized multi-user monitoring infrastructure
+* No dedicated web frontend
+* No production-grade evidence management system
+
+The object-detection and suspicion rules can produce false positives and should not be treated as definitive evidence of cheating.
 
 ---
 
-## 🤝 Contributing
+## Future Improvements
 
-Contributions welcome! Suggested flow:
-1. Fork the repository 🍴
-2. Create a branch: `git checkout -b feat/your-feature`
-3. Add tests and documentation ✅
-4. Open a pull request with a clear description
+Possible future improvements include:
 
-Add a `CONTRIBUTING.md` to document the process, coding standards (black/ruff), and review expectations.
-
----
-
-## 🔐 Security
-
-- Do not commit secrets. Use `.env` and `.gitignore`. 🚫🔑
-- Report vulnerabilities privately (GitHub Security Advisories or a private contact).
-- Keep dependencies up to date and monitor for CVEs.
+* Web-based student and faculty interfaces
+* Database-backed persistence
+* More sophisticated behavioral analysis
+* Improved detection and tracking
+* Configurable suspicion rules
+* Authentication and authorization improvements
+* Secure storage of monitoring recordings
+* Automated testing
+* Better logging and error handling
+* Containerized deployment
+* Centralized monitoring for multiple examination sessions
 
 ---
 
-## 📄 License
+## Disclaimer
 
-Add a LICENSE file to make the project's license explicit (e.g., MIT, Apache-2.0). Example:
-```
-MIT License
-See LICENSE file for details.
-```
+This project is intended for educational purposes and authorized testing/development environments.
+
+Automated monitoring results should be reviewed by a human and should not be used as the sole basis for determining academic misconduct.
 
 ---
 
-## 📬 Contact
+## Author
 
-Maintainer: Amarapini-Sasidhar  
-GitHub: [Amarapini-Sasidhar](https://github.com/Amarapini-Sasidhar) 🙋‍♂️
+**Amarapini Sasidhar**
 
+GitHub: [Amarapini-Sasidhar](https://github.com/Amarapini-Sasidhar)
